@@ -8,7 +8,7 @@ RUN  npm install -g phantomjs2@2.2.0
 RUN  npm install -g ember-cli@2.9.1
 #COPY . /source
 #RUN ./scripts/build-static -f -s   
-
+RUN ember new my-first-ember-app
 RUN npm config set registry https://registry.npm.taobao.org
 
 CMD ["bash"]
