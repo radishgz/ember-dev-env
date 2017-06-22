@@ -4,9 +4,12 @@ WORKDIR /source
 #COPY package.json bower.json ./
 #COPY scripts ./scripts
 RUN  npm install -g bower@1.8.0
-RUN  npm install -g phantomjs2@2.1.1 
+RUN  npm install -g phantomjs2@2.2.0 
 
 #COPY . /source
 #RUN ./scripts/build-static -f -s   
+
+npm config set registry https://registry.npm.taobao.org
+
 CMD ["bash"]
 #CMD ["npm","start","--","--ssl=false"]
