@@ -9,7 +9,7 @@ RUN  npm install -g ember-cli@2.9.1
 #COPY . /source
 #RUN ./scripts/build-static -f -s   
 
-npm config set registry https://registry.npm.taobao.org
+RUN npm config set registry https://registry.npm.taobao.org
 
 CMD ["bash"]
 #CMD ["npm","start","--","--ssl=false"]
