@@ -1,6 +1,7 @@
 FROM node:6
 RUN mkdir /source
 WORKDIR /source
+ADD ./Dockerfile /source/Dockerfile
 #COPY package.json bower.json ./
 #COPY scripts ./scripts
 RUN  npm install -g bower@1.8.0
