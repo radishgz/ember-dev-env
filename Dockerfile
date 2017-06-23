@@ -9,6 +9,7 @@ RUN  npm -g install phantomjs2@2.2.0
 RUN  npm -g install ember-cli@2.9.1
 RUN  npm -g install babel-core babel-preset-es2015
 RUN  npm -g install watchman
+RUN npm -g install esprima
 #COPY . /source
 #RUN ./scripts/build-static -f -s   
 RUN ember new my-first-ember-app
